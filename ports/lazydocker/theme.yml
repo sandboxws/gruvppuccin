@@ -1,0 +1,17 @@
+# Gruvppuccin theme for lazydocker
+# Merge into your config.yml under the `gui:` key:
+#
+#   gui:
+#     theme:
+#       ... (contents below)
+
+theme:
+  activeBorderColor:
+    - '#a9b665'    # green
+    - bold
+  inactiveBorderColor:
+    - '#5a524c'    # overlay0
+  selectedLineBgColor:
+    - '#2e2c2b'    # surface1
+  optionsTextColor:
+    - '#7daea3'    # sapphire

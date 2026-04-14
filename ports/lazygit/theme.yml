@@ -1,0 +1,34 @@
+# Gruvppuccin theme for lazygit
+# Merge into your config.yml under the `gui:` key:
+#
+#   gui:
+#     theme:
+#       ... (contents below)
+
+theme:
+  activeBorderColor:
+    - '#a9b665'    # green
+    - bold
+  inactiveBorderColor:
+    - '#5a524c'    # overlay0
+  searchingActiveBorderColor:
+    - '#d8a657'    # yellow
+    - bold
+  optionsTextColor:
+    - '#7daea3'    # sapphire
+  selectedLineBgColor:
+    - '#2e2c2b'    # surface1
+  inactiveViewSelectedLineBgColor:
+    - bold
+  cherryPickedCommitFgColor:
+    - '#c28fd6'    # mauve
+  cherryPickedCommitBgColor:
+    - '#413c39'    # surface2
+  markedBaseCommitFgColor:
+    - '#c28fd6'    # mauve
+  markedBaseCommitBgColor:
+    - '#d8a657'    # yellow
+  unstagedChangesColor:
+    - '#ea6962'    # red
+  defaultFgColor:
+    - '#d4be98'    # text

@@ -1,0 +1,20 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-json
+        files: '\.(json)$'
+      - id: check-yaml
+        files: '\.(ya?ml)$'
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: local
+    hooks:
+      - id: palette-consistency
+        name: Check colors match palette.json
+        entry: scripts/check-palette-consistency.sh
+        language: script
+        files: '\.(json|ya?ml|theme|zsh)$'
+        exclude: '^(\.pre-commit-config\.yaml|palette\.json)$'
+        pass_filenames: false

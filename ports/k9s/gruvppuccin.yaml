@@ -1,0 +1,117 @@
+# Gruvppuccin — Gruvbox x Catppuccin blend for k9s
+
+# ── Palette anchors ──────────────────────────────
+foreground: &text      "#d4be98"
+background: &base      "#181a1b"
+mantle:     &mantle    "#141617"
+surface0:   &surface0  "#242424"
+surface1:   &surface1  "#2e2c2b"
+surface2:   &surface2  "#413c39"
+overlay0:   &overlay0  "#5a524c"
+overlay1:   &overlay1  "#6e655a"
+overlay2:   &overlay2  "#7c7269"
+subtext0:   &subtext0  "#a69a8a"
+subtext1:   &subtext1  "#bfb3a2"
+rosewater:  &rosewater "#e6c9a8"
+flamingo:   &flamingo  "#e09b8a"
+pink:       &pink      "#d4879c"
+mauve:      &mauve     "#c28fd6"
+red:        &red       "#ea6962"
+maroon:     &maroon    "#e07868"
+peach:      &peach     "#e78a4e"
+yellow:     &yellow    "#d8a657"
+green:      &green     "#a9b665"
+teal:       &teal      "#89b482"
+sky:        &sky       "#8dbcb0"
+sapphire:   &sapphire  "#7daea3"
+lavender:   &lavender  "#afa4cc"
+
+k9s:
+  body:
+    fgColor: *text
+    bgColor: *base
+    logoColor: *sapphire
+  prompt:
+    fgColor: *text
+    bgColor: *base
+    suggestColor: *peach
+  info:
+    fgColor: *mauve
+    sectionColor: *text
+  help:
+    fgColor: *text
+    bgColor: *base
+    keyColor: *mauve
+    numKeyColor: *sapphire
+    sectionColor: *green
+  dialog:
+    fgColor: *text
+    bgColor: *base
+    buttonFgColor: *base
+    buttonBgColor: *mauve
+    buttonFocusFgColor: *base
+    buttonFocusBgColor: *green
+    labelFgColor: *peach
+    fieldFgColor: *text
+  frame:
+    border:
+      fgColor: *surface2
+      focusColor: *green
+    menu:
+      fgColor: *text
+      keyColor: *mauve
+      numKeyColor: *mauve
+    crumbs:
+      fgColor: *base
+      bgColor: *overlay0
+      activeColor: *sapphire
+    status:
+      newColor: *sky
+      modifyColor: *sapphire
+      addColor: *green
+      errorColor: *red
+      highlightColor: *peach
+      killColor: *overlay1
+      completedColor: *overlay1
+    title:
+      fgColor: *text
+      bgColor: *base
+      highlightColor: *peach
+      counterColor: *sapphire
+      filterColor: *mauve
+  views:
+    charts:
+      bgColor: *base
+      defaultDialColors:
+        - *sapphire
+        - *red
+      defaultChartColors:
+        - *sapphire
+        - *red
+    table:
+      fgColor: *text
+      bgColor: *base
+      cursorFgColor: *text
+      cursorBgColor: *surface1
+      header:
+        fgColor: *text
+        bgColor: *base
+        sorterColor: *yellow
+    xray:
+      fgColor: *text
+      bgColor: *base
+      cursorColor: *surface1
+      graphicColor: *sapphire
+      showIcons: false
+    yaml:
+      keyColor: *mauve
+      colonColor: *overlay2
+      valueColor: *text
+    logs:
+      fgColor: *text
+      bgColor: *base
+      indicator:
+        fgColor: *text
+        bgColor: *base
+        toggleOnColor: *green
+        toggleOffColor: *red

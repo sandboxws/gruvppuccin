@@ -1,0 +1,4 @@
+init: |
+  \set SYNTAX_HL true
+  \set SYNTAX_HL_STYLE gruvbox
+  \set SYNTAX_HL_OVERRIDE_BG true

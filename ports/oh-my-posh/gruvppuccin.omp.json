@@ -1,0 +1,93 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "palette": {
+    "crust": "#101213",
+    "mantle": "#141617",
+    "base": "#181a1b",
+    "surface0": "#242424",
+    "surface1": "#2e2c2b",
+    "surface2": "#413c39",
+    "overlay0": "#5a524c",
+    "overlay1": "#6e655a",
+    "overlay2": "#7c7269",
+    "subtext0": "#a69a8a",
+    "subtext1": "#bfb3a2",
+    "text": "#d4be98",
+    "rosewater": "#e6c9a8",
+    "flamingo": "#e09b8a",
+    "pink": "#d4879c",
+    "mauve": "#c28fd6",
+    "red": "#ea6962",
+    "maroon": "#e07868",
+    "peach": "#e78a4e",
+    "yellow": "#d8a657",
+    "green": "#a9b665",
+    "teal": "#89b482",
+    "sky": "#8dbcb0",
+    "sapphire": "#7daea3",
+    "blue": "#7daea3",
+    "lavender": "#afa4cc"
+  },
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "p:subtext0",
+          "style": "plain",
+          "template": "{{.Icon}} ",
+          "type": "os"
+        },
+        {
+          "foreground": "p:sapphire",
+          "style": "plain",
+          "template": "{{ .UserName }} ",
+          "type": "session"
+        },
+        {
+          "foreground": "p:yellow",
+          "options": {
+            "folder_icon": "..\ue5fe..",
+            "home_icon": "~",
+            "style": "agnoster_short"
+          },
+          "style": "plain",
+          "template": "{{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "foreground": "p:green",
+          "foreground_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:peach{{ end }}",
+            "{{ if gt .Ahead 0 }}p:sky{{ end }}",
+            "{{ if gt .Behind 0 }}p:flamingo{{ end }}"
+          ],
+          "options": {
+            "branch_icon": "\ue725 ",
+            "cherry_pick_icon": "\ue29b ",
+            "commit_icon": "\uf417 ",
+            "fetch_status": true,
+            "fetch_upstream_icon": false,
+            "merge_icon": "\ue727 ",
+            "no_commits_icon": "\uf0c3 ",
+            "rebase_icon": "\ue728 ",
+            "revert_icon": "\uf0e2 ",
+            "tag_icon": "\uf412 "
+          },
+          "template": "{{ .HEAD }} ",
+          "style": "plain",
+          "type": "git"
+        },
+        {
+          "style": "plain",
+          "foreground": "p:overlay2",
+          "template": "\uf105",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 4
+}
