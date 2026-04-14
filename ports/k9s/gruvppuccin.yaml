@@ -55,7 +55,7 @@ k9s:
     fieldFgColor: *text
   frame:
     border:
-      fgColor: *surface2
+      fgColor: *overlay0
       focusColor: *green
     menu:
       fgColor: *text

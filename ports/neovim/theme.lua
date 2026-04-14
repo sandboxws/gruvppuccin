@@ -308,7 +308,8 @@ return {
         hl["@lsp.mod.number.go"]               = { fg = p.text }
         hl["@lsp.type.property.go"]            = { fg = p.text }
         hl["@property.go"]                     = { fg = p.text }
-        hl["@field.go"]                        = { fg = p.text }
+        hl["@field.go"]                        = { fg = p.text }  -- legacy
+        hl["@variable.member.go"]              = { fg = p.text }  -- current
         hl["@variable.go"]                     = { fg = p.text }
 
         -- ── Swift: semantic token colors from sourcekit-lsp ──
@@ -322,6 +323,14 @@ return {
         hl["@lsp.type.property.swift"]      = { fg = p.lavender }
         hl["@lsp.type.enumMember.swift"]    = { fg = p.teal }
         hl["@lsp.type.identifier.swift"]    = { fg = p.text }
+
+        -- ── Rust: semantic token refinements from rust-analyzer ──
+        hl["@lsp.type.decorator.rust"]        = { fg = p.yellow, italic = true }
+        hl["@lsp.type.deriveHelper.rust"]     = { fg = p.yellow, italic = true }
+        hl["@lsp.type.lifetime.rust"]         = { fg = p.peach, italic = true }
+        hl["@lsp.type.selfKeyword.rust"]      = { fg = p.red }
+        hl["@lsp.type.selfTypeKeyword.rust"]  = { fg = p.yellow }
+        hl["@lsp.type.formatSpecifier.rust"]  = { fg = p.pink }
 
         -- ── DAP Explorer ───────────────────────────────
         hl.DapExplorerScope    = { fg = p.sky, bold = true }

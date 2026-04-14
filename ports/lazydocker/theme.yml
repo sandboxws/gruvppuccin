@@ -15,3 +15,8 @@ theme:
     - '#2e2c2b'    # surface1
   optionsTextColor:
     - '#7daea3'    # sapphire
+  searchingActiveBorderColor:
+    - '#d8a657'    # yellow
+    - bold
+  defaultFgColor:
+    - '#d4be98'    # text

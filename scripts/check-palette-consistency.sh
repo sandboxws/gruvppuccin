@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Validate that every hex color in port theme files exists in palette.json.
-# Skips .lua files (neovim theme IS the palette source) and README files.
+# Skips .lua files — Neovim uses hex literals in Util.blend() calls (e.g. #000000)
+# that are blend anchors, not palette colors.
 
 set -euo pipefail
 
@@ -19,7 +20,7 @@ exit_code=0
 
 # Scan port files for hex color literals
 while IFS= read -r file; do
-  # Skip Lua files (neovim theme defines the palette — checking is circular)
+  # Skip Lua files (contain non-palette hex in blend operations)
   [[ "$file" == *.lua ]] && continue
   # Skip READMEs and palette.json itself
   [[ "$(basename "$file")" == README.md ]] && continue
