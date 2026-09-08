@@ -1,0 +1,7 @@
+id = "gruvppuccin"
+name = "Gruvppuccin"
+schema_version = 1
+version = "0.1.0"
+authors = ["Ahmed El.Hussaini"]
+description = "Warm Gruvbox x Catppuccin blend for Zed"
+repository = "https://github.com/sandboxws/gruvppuccin"

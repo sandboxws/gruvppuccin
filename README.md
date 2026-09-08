@@ -1,6 +1,6 @@
 # Gruvppuccin
 
-> Warm, ergonomic color palette blending Gruvbox and Catppuccin for terminal and TUI apps.
+> Warm, ergonomic color palette blending Gruvbox and Catppuccin for editors, terminals, and TUI apps.
 
 ## Palette
 
@@ -69,6 +69,7 @@
 | App | Type | Install |
 |-----|------|---------|
 | [Neovim](ports/neovim/) | Editor | [README](ports/neovim/README.md) |
+| [Zed](ports/zed/) | Editor | [README](ports/zed/README.md) |
 | [Oh My Posh](ports/oh-my-posh/) | Prompt | [README](ports/oh-my-posh/README.md) |
 | [fzf](ports/fzf/) | Fuzzy finder | [README](ports/fzf/README.md) |
 | [btop](ports/btop/) | System monitor | [README](ports/btop/README.md) |
