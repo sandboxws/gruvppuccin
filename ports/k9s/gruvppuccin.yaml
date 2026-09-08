@@ -1,9 +1,25 @@
-# Gruvppuccin — Gruvbox x Catppuccin blend for k9s
+# ────────────────────────────────────────────────────────────
+#  GENERATED FILE — DO NOT EDIT
+#  source: palette.json + templates/k9s/skin.tmpl
+#  regen:  python3 scripts/generate.py
+# ────────────────────────────────────────────────────────────
+# Alias for gruvppuccin-macchiato (the pre-1.0 default), kept so existing
+# configs keep working. Prefer gruvppuccin-macchiato in new setups.
+# Gruvppuccin Macchiato — Gruvbox × Catppuccin blend for k9s
+#
+# Install as a named skin and reference it by stem (no extension):
+#   k9s:
+#     ui:
+#       skin: gruvppuccin-macchiato
+#
+# k9s also supports per-cluster skins, so different contexts can wear
+# different flavors — see the port README.
 
-# ── Palette anchors ──────────────────────────────
+# ── Palette anchors ────────────────────────────
 foreground: &text      "#d4be98"
 background: &base      "#181a1b"
 mantle:     &mantle    "#141617"
+crust:      &crust     "#101213"
 surface0:   &surface0  "#242424"
 surface1:   &surface1  "#2e2c2b"
 surface2:   &surface2  "#413c39"
@@ -12,19 +28,20 @@ overlay1:   &overlay1  "#6e655a"
 overlay2:   &overlay2  "#7c7269"
 subtext0:   &subtext0  "#a69a8a"
 subtext1:   &subtext1  "#bfb3a2"
-rosewater:  &rosewater "#e6c9a8"
-flamingo:   &flamingo  "#e09b8a"
-pink:       &pink      "#d4879c"
+rosewater:  &rosewater "#e19552"
+flamingo:   &flamingo  "#e88055"
+pink:       &pink      "#d68299"
 mauve:      &mauve     "#c28fd6"
 red:        &red       "#ea6962"
-maroon:     &maroon    "#e07868"
+maroon:     &maroon    "#e9755b"
 peach:      &peach     "#e78a4e"
 yellow:     &yellow    "#d8a657"
 green:      &green     "#a9b665"
-teal:       &teal      "#89b482"
-sky:        &sky       "#8dbcb0"
+teal:       &teal      "#8fb18a"
+sky:        &sky       "#97b3a0"
 sapphire:   &sapphire  "#7daea3"
-lavender:   &lavender  "#afa4cc"
+blue:       &blue      "#7daea3"
+lavender:   &lavender  "#ad98c7"
 
 k9s:
   body:

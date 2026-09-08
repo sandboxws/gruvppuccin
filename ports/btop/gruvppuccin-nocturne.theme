@@ -1,0 +1,92 @@
+# ────────────────────────────────────────────────────────────
+#  GENERATED FILE — DO NOT EDIT
+#  source: palette.json + templates/btop/theme.tmpl
+#  regen:  python3 scripts/generate.py
+# ────────────────────────────────────────────────────────────
+# Nocturne — Gruvbox × Catppuccin blend for btop
+# Warm earthy tones with Catppuccin's cooler accents
+
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="#12151a"
+
+# Main text color
+theme[main_fg]="#e6e8ec"
+
+# Title color for boxes
+theme[title]="#e6e8ec"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#38bdf8"
+
+# Background color of selected items
+theme[selected_bg]="#f5b454"
+
+# Foreground color of selected items
+theme[selected_fg]="#12151a"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#3a414d"
+
+# Color of text appearing on top of graphs, i.e uptime and current network graph scaling
+theme[graph_text]="#3a414d"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#5eead4"
+
+# Cpu box outline color
+theme[cpu_box]="#2d333d"
+
+# Memory/disks box outline color
+theme[mem_box]="#2d333d"
+
+# Net up/down box outline color
+theme[net_box]="#2d333d"
+
+# Processes box outline color
+theme[proc_box]="#2d333d"
+
+# Box divider line and small boxes line color
+theme[div_line]="#2d333d"
+
+# Temperature graph colors (sapphire → yellow → red: cool to hot)
+# Nocturne override: its `peach` is a sky blue, so the warm ramp uses `yellow`
+theme[temp_start]="#7c6cf6"
+theme[temp_mid]="#f5b454"
+theme[temp_end]="#fb7185"
+
+# CPU graph colors (green → yellow → red: load gradient)
+theme[cpu_start]="#5eead4"
+theme[cpu_mid]="#f5b454"
+theme[cpu_end]="#fb7185"
+
+# Mem/Disk free meter (teal → green → yellow)
+theme[free_start]="#34d399"
+theme[free_mid]="#5eead4"
+theme[free_end]="#f5b454"
+
+# Mem/Disk cached meter (sapphire → sky → teal)
+theme[cached_start]="#7c6cf6"
+theme[cached_mid]="#7dd3fc"
+theme[cached_end]="#34d399"
+
+# Mem/Disk available meter (yellow → maroon → red)
+# Nocturne override: its `peach` is a sky blue, so the warm ramp uses `yellow`
+theme[available_start]="#f5b454"
+theme[available_mid]="#fda4af"
+theme[available_end]="#fb7185"
+
+# Mem/Disk used meter (red → maroon → yellow)
+# Nocturne override: its `peach` is a sky blue, so the warm ramp uses `yellow`
+theme[used_start]="#fb7185"
+theme[used_mid]="#fda4af"
+theme[used_end]="#f5b454"
+
+# Download graph colors (sky → sapphire → lavender)
+theme[download_start]="#7dd3fc"
+theme[download_mid]="#7c6cf6"
+theme[download_end]="#c4b5fd"
+
+# Upload graph colors (mauve → pink → flamingo)
+theme[upload_start]="#a78bfa"
+theme[upload_mid]="#f472b6"
+theme[upload_end]="#f5c2c2"

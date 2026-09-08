@@ -1,0 +1,93 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "palette": {
+    "crust": "#ded7cc",
+    "mantle": "#efe8da",
+    "base": "#f1ecde",
+    "surface0": "#e7e2d6",
+    "surface1": "#ded7cc",
+    "surface2": "#cdc6bf",
+    "overlay0": "#a69fa1",
+    "overlay1": "#8d868d",
+    "overlay2": "#746c79",
+    "subtext0": "#5e5667",
+    "subtext1": "#453f51",
+    "text": "#33303a",
+    "rosewater": "#d67b20",
+    "flamingo": "#de5f25",
+    "pink": "#c04e58",
+    "mauve": "#a44d85",
+    "red": "#d93e32",
+    "maroon": "#db4f2b",
+    "peach": "#e06f1e",
+    "yellow": "#c88c22",
+    "green": "#8a8f1a",
+    "teal": "#47855e",
+    "sky": "#226773",
+    "sapphire": "#1a7f8c",
+    "blue": "#1a7f8c",
+    "lavender": "#7b5c87"
+  },
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "p:subtext0",
+          "style": "plain",
+          "template": "{{.Icon}} ",
+          "type": "os"
+        },
+        {
+          "foreground": "p:sapphire",
+          "style": "plain",
+          "template": "{{ .UserName }} ",
+          "type": "session"
+        },
+        {
+          "foreground": "p:yellow",
+          "options": {
+            "folder_icon": "....",
+            "home_icon": "~",
+            "style": "agnoster_short"
+          },
+          "style": "plain",
+          "template": "{{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "foreground": "p:green",
+          "foreground_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:peach{{ end }}",
+            "{{ if gt .Ahead 0 }}p:sky{{ end }}",
+            "{{ if gt .Behind 0 }}p:flamingo{{ end }}"
+          ],
+          "options": {
+            "branch_icon": " ",
+            "cherry_pick_icon": " ",
+            "commit_icon": " ",
+            "fetch_status": true,
+            "fetch_upstream_icon": false,
+            "merge_icon": " ",
+            "no_commits_icon": " ",
+            "rebase_icon": " ",
+            "revert_icon": " ",
+            "tag_icon": " "
+          },
+          "template": "{{ .HEAD }} ",
+          "style": "plain",
+          "type": "git"
+        },
+        {
+          "style": "plain",
+          "foreground": "p:overlay2",
+          "template": "",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 4
+}

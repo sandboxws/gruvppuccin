@@ -12,6 +12,28 @@ source /path/to/gruvppuccin.zsh
 
 The script appends color flags to your existing `FZF_DEFAULT_OPTS`, so layout settings like `--height`, `--border`, and `--preview` are preserved.
 
+## Flavors
+
+Source `gruvppuccin.zsh` and set `GRUVPPUCCIN_FLAVOR`, or source a flavor file directly.
+
+<!-- flavors:start -->
+| Flavor | Mode | File |
+|--------|------|------|
+| Gruvppuccin Macchiato | dark | `gruvppuccin-macchiato.zsh` |
+| Gruvppuccin Mocha | dark | `gruvppuccin-mocha.zsh` |
+| Gruvppuccin Latte | light | `gruvppuccin-latte.zsh` |
+| Gruvppuccin Nebula | dark | `gruvppuccin-nebula.zsh` |
+| Gruvppuccin Void | dark | `gruvppuccin-void.zsh` |
+| Gruvppuccin Nova | light | `gruvppuccin-nova.zsh` |
+| Gruvppuccin Haze | light | `gruvppuccin-haze.zsh` |
+| Gruvbark Nebula | dark | `gruvbark-nebula.zsh` |
+| Gruvbark Void | dark | `gruvbark-void.zsh` |
+| Gruvbark Nova | light | `gruvbark-nova.zsh` |
+| Gruvbark Haze | light | `gruvbark-haze.zsh` |
+| Nocturne | dark | `gruvppuccin-nocturne.zsh` |
+| Nocturne Gruv | dark | `gruvppuccin-nocturne-gruv.zsh` |
+<!-- flavors:end -->
+
 ## Color mapping
 
 | fzf role | Hex | Palette name |

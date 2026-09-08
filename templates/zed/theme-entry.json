@@ -1,0 +1,718 @@
+{
+  "name": "{@name}",
+  "appearance": "{@appearance}",
+  "style": {
+    "border": "#{surface2.ff}",
+    "border.variant": "#{surface1.ff}",
+    "border.focused": "#{sapphire.ff}",
+    "border.selected": "#{sapphire.ff}",
+    "border.transparent": "#{base.00}",
+    "border.disabled": "#{surface1.ff}",
+    "background.appearance": "opaque",
+    "background": "#{mantle.ff}",
+    "elevated_surface.background": "#{mantle.ff}",
+    "surface.background": "#{mantle.ff}",
+    "panel.background": "#{mantle.ff}",
+    "panel.focused_border": "#{green.ff}",
+    "panel.indent_guide": "#{surface1.ff}",
+    "panel.indent_guide_hover": "#{surface2.ff}",
+    "panel.indent_guide_active": "#{overlay0.ff}",
+    "panel.overlay_background": "#{mantle.ff}",
+    "panel.overlay_hover": "#{surface1.ff}",
+    "pane.focused_border": "#{green.ff}",
+    "pane_group.border": "#{surface2.ff}",
+    "element.background": "#{surface0.ff}",
+    "element.hover": "#{surface1.ff}",
+    "element.active": "#{surface2.ff}",
+    "element.selected": "#{surface1.ff}",
+    "element.disabled": "#{surface0.ff}",
+    "element.selection_background": "#{surface2.99}",
+    "drop_target.background": "#{sapphire.33}",
+    "drop_target.border": "#{sapphire.99}",
+    "ghost_element.background": "#{base.00}",
+    "ghost_element.hover": "#{surface1.99}",
+    "ghost_element.active": "#{surface2.99}",
+    "ghost_element.selected": "#{surface1.ff}",
+    "ghost_element.disabled": "#{base.00}",
+    "text": "#{text.ff}",
+    "text.muted": "#{subtext0.ff}",
+    "text.placeholder": "#{overlay1.ff}",
+    "text.disabled": "#{overlay0.ff}",
+    "text.accent": "#{sapphire.ff}",
+    "link_text.hover": "#{sapphire.ff}",
+    "icon": "#{subtext1.ff}",
+    "icon.muted": "#{subtext0.ff}",
+    "icon.disabled": "#{overlay0.ff}",
+    "icon.placeholder": "#{overlay1.ff}",
+    "icon.accent": "#{sapphire.ff}",
+    "status_bar.background": "#{mantle.ff}",
+    "title_bar.background": "#{mantle.ff}",
+    "title_bar.inactive_background": "#{crust.ff}",
+    "toolbar.background": "#{base.ff}",
+    "tab_bar.background": "#{mantle.ff}",
+    "tab.inactive_background": "#{mantle.ff}",
+    "tab.active_background": "#{base.ff}",
+    "search.match_background": "#{sky.4d}",
+    "search.active_match_background": "#{red.73}",
+    "scrollbar.thumb.background": "#{surface2.80}",
+    "scrollbar.thumb.hover_background": "#{surface2.cc}",
+    "scrollbar.thumb.active_background": "#{overlay0.cc}",
+    "scrollbar.thumb.border": "#{base.00}",
+    "scrollbar.track.background": "#{base.00}",
+    "scrollbar.track.border": "#{surface1.ff}",
+    "minimap.thumb.background": "#{surface2.40}",
+    "minimap.thumb.hover_background": "#{surface2.80}",
+    "minimap.thumb.active_background": "#{surface2.cc}",
+    "minimap.thumb.border": "#{base.00}",
+    "editor.foreground": "#{text.ff}",
+    "editor.background": "#{base.ff}",
+    "editor.gutter.background": "#{base.ff}",
+    "editor.subheader.background": "#{mantle.ff}",
+    "editor.active_line.background": "#{surface0.ff}",
+    "editor.highlighted_line.background": "#{yellow.26}",
+    "editor.debugger_active_line.background": "#{peach.33}",
+    "editor.line_number": "#{overlay0.ff}",
+    "editor.active_line_number": "#{lavender.ff}",
+    "editor.hover_line_number": "#{subtext0.ff}",
+    "editor.invisible": "#{surface2.ff}",
+    "editor.wrap_guide": "#{surface1.ff}",
+    "editor.active_wrap_guide": "#{surface2.ff}",
+    "editor.indent_guide": "#{surface1.ff}",
+    "editor.indent_guide_active": "#{overlay0.ff}",
+    "editor.document_highlight.read_background": "#{surface2.66}",
+    "editor.document_highlight.write_background": "#{surface2.b3}",
+    "editor.document_highlight.bracket_background": "#{overlay0.66}",
+    "editor.diff_hunk.added.background": "#{green.2e}",
+    "editor.diff_hunk.added.hollow_background": "#{green.1a}",
+    "editor.diff_hunk.added.hollow_border": "#{green.99}",
+    "editor.diff_hunk.deleted.background": "#{red.2e}",
+    "editor.diff_hunk.deleted.hollow_background": "#{red.1a}",
+    "editor.diff_hunk.deleted.hollow_border": "#{red.99}",
+    "terminal.background": "#{base.ff}",
+    "terminal.ansi.background": "#{base.ff}",
+    "terminal.foreground": "#{text.ff}",
+    "terminal.bright_foreground": "#{rosewater.ff}",
+    "terminal.dim_foreground": "#{subtext0.ff}",
+    "terminal.ansi.black": "#{crust.ff}",
+    "terminal.ansi.bright_black": "#{surface2.ff}",
+    "terminal.ansi.dim_black": "#{crust.99}",
+    "terminal.ansi.red": "#{red.ff}",
+    "terminal.ansi.bright_red": "#{flamingo.ff}",
+    "terminal.ansi.dim_red": "#{red.99}",
+    "terminal.ansi.green": "#{green.ff}",
+    "terminal.ansi.bright_green": "#{teal.ff}",
+    "terminal.ansi.dim_green": "#{green.99}",
+    "terminal.ansi.yellow": "#{yellow.ff}",
+    "terminal.ansi.bright_yellow": "#{peach.ff}",
+    "terminal.ansi.dim_yellow": "#{yellow.99}",
+    "terminal.ansi.blue": "#{blue.ff}",
+    "terminal.ansi.bright_blue": "#{lavender.ff}",
+    "terminal.ansi.dim_blue": "#{blue.99}",
+    "terminal.ansi.magenta": "#{mauve.ff}",
+    "terminal.ansi.bright_magenta": "#{pink.ff}",
+    "terminal.ansi.dim_magenta": "#{mauve.99}",
+    "terminal.ansi.cyan": "#{sky.ff}",
+    "terminal.ansi.bright_cyan": "#{sky.ff}",
+    "terminal.ansi.dim_cyan": "#{sky.99}",
+    "terminal.ansi.white": "#{subtext0.ff}",
+    "terminal.ansi.bright_white": "#{text.ff}",
+    "terminal.ansi.dim_white": "#{subtext0.99}",
+    "version_control.added": "#{green.ff}",
+    "version_control.modified": "#{sapphire.ff}",
+    "version_control.deleted": "#{red.ff}",
+    "version_control.renamed": "#{yellow.ff}",
+    "version_control.conflict": "#{peach.ff}",
+    "version_control.ignored": "#{overlay1.ff}",
+    "version_control.word_added": "#{green.4d}",
+    "version_control.word_deleted": "#{red.4d}",
+    "version_control.conflict_marker.ours": "#{green.33}",
+    "version_control.conflict_marker.theirs": "#{sapphire.33}",
+    "debugger.accent": "#{peach.ff}",
+    "conflict": "#{peach.ff}",
+    "conflict.background": "#{peach.33}",
+    "conflict.border": "#{peach.66}",
+    "created": "#{green.ff}",
+    "created.background": "#{green.33}",
+    "created.border": "#{green.66}",
+    "deleted": "#{red.ff}",
+    "deleted.background": "#{red.33}",
+    "deleted.border": "#{red.66}",
+    "error": "#{red.ff}",
+    "error.background": "#{red.33}",
+    "error.border": "#{red.66}",
+    "hidden": "#{overlay1.ff}",
+    "hidden.background": "#{overlay1.33}",
+    "hidden.border": "#{overlay1.66}",
+    "hint": "#{sky.ff}",
+    "hint.background": "#{sky.33}",
+    "hint.border": "#{sky.66}",
+    "ignored": "#{overlay1.ff}",
+    "ignored.background": "#{overlay1.33}",
+    "ignored.border": "#{overlay1.66}",
+    "info": "#{sapphire.ff}",
+    "info.background": "#{sapphire.33}",
+    "info.border": "#{sapphire.66}",
+    "modified": "#{sapphire.ff}",
+    "modified.background": "#{sapphire.33}",
+    "modified.border": "#{sapphire.66}",
+    "predictive": "#{overlay1.ff}",
+    "predictive.background": "#{overlay1.33}",
+    "predictive.border": "#{overlay1.66}",
+    "renamed": "#{yellow.ff}",
+    "renamed.background": "#{yellow.33}",
+    "renamed.border": "#{yellow.66}",
+    "success": "#{teal.ff}",
+    "success.background": "#{teal.33}",
+    "success.border": "#{teal.66}",
+    "unreachable": "#{overlay0.ff}",
+    "unreachable.background": "#{overlay0.33}",
+    "unreachable.border": "#{overlay0.66}",
+    "warning": "#{yellow.ff}",
+    "warning.background": "#{yellow.33}",
+    "warning.border": "#{yellow.66}",
+    "accents": [
+      "#{red.66}",
+      "#{peach.66}",
+      "#{yellow.66}",
+      "#{green.66}",
+      "#{sapphire.66}",
+      "#{lavender.66}",
+      "#{mauve.66}",
+      "#{pink.66}"
+    ],
+    "players": [
+      {
+        "cursor": "#{rosewater.ff}",
+        "background": "#{rosewater.ff}",
+        "selection": "#{surface2.99}"
+      },
+      {
+        "cursor": "#{sapphire.ff}",
+        "background": "#{sapphire.ff}",
+        "selection": "#{sapphire.40}"
+      },
+      {
+        "cursor": "#{green.ff}",
+        "background": "#{green.ff}",
+        "selection": "#{green.40}"
+      },
+      {
+        "cursor": "#{mauve.ff}",
+        "background": "#{mauve.ff}",
+        "selection": "#{mauve.40}"
+      },
+      {
+        "cursor": "#{peach.ff}",
+        "background": "#{peach.ff}",
+        "selection": "#{peach.40}"
+      },
+      {
+        "cursor": "#{pink.ff}",
+        "background": "#{pink.ff}",
+        "selection": "#{pink.40}"
+      },
+      {
+        "cursor": "#{teal.ff}",
+        "background": "#{teal.ff}",
+        "selection": "#{teal.40}"
+      },
+      {
+        "cursor": "#{lavender.ff}",
+        "background": "#{lavender.ff}",
+        "selection": "#{lavender.40}"
+      }
+    ],
+    "syntax": {
+      "attribute": {
+        "color": "#{peach.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "boolean": {
+        "color": "#{peach.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "character": {
+        "color": "#{teal.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "comment": {
+        "color": "#{overlay2.ff}",
+        "font_style": "italic",
+        "font_weight": null
+      },
+      "comment.doc": {
+        "color": "#{overlay2.ff}",
+        "font_style": "italic",
+        "font_weight": null
+      },
+      "comment.documentation": {
+        "color": "#{overlay2.ff}",
+        "font_style": "italic",
+        "font_weight": null
+      },
+      "comment.error": {
+        "color": "#{red.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "comment.hint": {
+        "color": "#{sapphire.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "comment.note": {
+        "color": "#{rosewater.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "comment.todo": {
+        "color": "#{flamingo.ff}",
+        "font_style": null,
+        "font_weight": 700
+      },
+      "comment.warning": {
+        "color": "#{yellow.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "concept": {
+        "color": "#{yellow.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "constant": {
+        "color": "#{peach.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "constant.builtin": {
+        "color": "#{peach.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "constant.macro": {
+        "color": "#{pink.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "constructor": {
+        "color": "#{yellow.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "diff.minus": {
+        "color": "#{red.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "diff.plus": {
+        "color": "#{green.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "embedded": {
+        "color": "#{text.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "emphasis": {
+        "color": "#{red.ff}",
+        "font_style": "italic",
+        "font_weight": null
+      },
+      "emphasis.strong": {
+        "color": "#{red.ff}",
+        "font_style": null,
+        "font_weight": 700
+      },
+      "enum": {
+        "color": "#{yellow.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "field": {
+        "color": "#{lavender.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "float": {
+        "color": "#{peach.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "function": {
+        "color": "#{sapphire.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "function.builtin": {
+        "color": "#{peach.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "function.call": {
+        "color": "#{sapphire.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "function.decorator": {
+        "color": "#{yellow.ff}",
+        "font_style": "italic",
+        "font_weight": null
+      },
+      "function.macro": {
+        "color": "#{pink.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "function.method": {
+        "color": "#{sapphire.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "function.method.call": {
+        "color": "#{sapphire.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "hint": {
+        "color": "#{overlay0.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "keyword": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "keyword.conditional": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "keyword.conditional.ternary": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "keyword.coroutine": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "keyword.debug": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "keyword.directive": {
+        "color": "#{pink.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "keyword.directive.define": {
+        "color": "#{pink.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "keyword.exception": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "keyword.export": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "keyword.function": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "keyword.import": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "keyword.modifier": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "keyword.operator": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "keyword.repeat": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "keyword.return": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "keyword.type": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "label": {
+        "color": "#{sapphire.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "link_text": {
+        "color": "#{lavender.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "link_uri": {
+        "color": "#{sapphire.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "module": {
+        "color": "#{yellow.ff}",
+        "font_style": "italic",
+        "font_weight": null
+      },
+      "namespace": {
+        "color": "#{yellow.ff}",
+        "font_style": "italic",
+        "font_weight": null
+      },
+      "number": {
+        "color": "#{peach.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "number.float": {
+        "color": "#{peach.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "operator": {
+        "color": "#{sky.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "parameter": {
+        "color": "#{maroon.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "predictive": {
+        "color": "#{overlay1.ff}",
+        "font_style": "italic",
+        "font_weight": null
+      },
+      "preproc": {
+        "color": "#{pink.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "primary": {
+        "color": "#{text.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "property": {
+        "color": "#{lavender.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "punctuation": {
+        "color": "#{overlay2.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "punctuation.bracket": {
+        "color": "#{overlay2.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "punctuation.delimiter": {
+        "color": "#{overlay2.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "punctuation.list_marker": {
+        "color": "#{teal.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "punctuation.markup": {
+        "color": "#{overlay2.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "punctuation.special": {
+        "color": "#{pink.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "selector": {
+        "color": "#{yellow.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "selector.pseudo": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "string": {
+        "color": "#{green.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "string.doc": {
+        "color": "#{teal.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "string.documentation": {
+        "color": "#{teal.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "string.escape": {
+        "color": "#{pink.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "string.regex": {
+        "color": "#{pink.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "string.regexp": {
+        "color": "#{pink.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "string.special": {
+        "color": "#{pink.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "string.special.path": {
+        "color": "#{teal.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "string.special.symbol": {
+        "color": "#{flamingo.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "string.special.url": {
+        "color": "#{sapphire.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "symbol": {
+        "color": "#{flamingo.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "tag": {
+        "color": "#{sapphire.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "tag.attribute": {
+        "color": "#{yellow.ff}",
+        "font_style": "italic",
+        "font_weight": null
+      },
+      "tag.delimiter": {
+        "color": "#{teal.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "tag.doctype": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "text.literal": {
+        "color": "#{teal.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "title": {
+        "color": "#{sapphire.ff}",
+        "font_style": null,
+        "font_weight": 700
+      },
+      "type": {
+        "color": "#{yellow.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "type.builtin": {
+        "color": "#{mauve.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "type.class.definition": {
+        "color": "#{yellow.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "type.definition": {
+        "color": "#{yellow.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "type.interface": {
+        "color": "#{mauve.ff}",
+        "font_style": "italic",
+        "font_weight": null
+      },
+      "type.super": {
+        "color": "#{yellow.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "variable": {
+        "color": "#{text.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "variable.builtin": {
+        "color": "#{red.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "variable.member": {
+        "color": "#{lavender.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "variable.parameter": {
+        "color": "#{maroon.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "variable.special": {
+        "color": "#{red.ff}",
+        "font_style": null,
+        "font_weight": null
+      },
+      "variant": {
+        "color": "#{teal.ff}",
+        "font_style": null,
+        "font_weight": null
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+# ────────────────────────────────────────────────────────────
+#  GENERATED FILE — DO NOT EDIT
+#  source: palette.json + templates/lazygit/theme.tmpl
+#  regen:  python3 scripts/generate.py
+# ────────────────────────────────────────────────────────────
+# Gruvppuccin Nova theme for lazygit
+#
+# Preferred install — layer it over your config with a comma-separated path:
+#   export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml,/path/to/gruvppuccin-nova.yml"
+#
+# Or merge the `theme:` block below into your config.yml under `gui:`.
+
+theme:
+  activeBorderColor:
+    - '#8a8f1a'    # green
+    - bold
+  inactiveBorderColor:
+    - '#a79d98'    # overlay0
+  searchingActiveBorderColor:
+    - '#c88c22'    # yellow
+    - bold
+  optionsTextColor:
+    - '#1a7f8c'    # sapphire
+  selectedLineBgColor:
+    - '#dbd0bd'    # surface1
+  inactiveViewSelectedLineBgColor:
+    - bold
+  cherryPickedCommitFgColor:
+    - '#a44d85'    # mauve
+  cherryPickedCommitBgColor:
+    - '#c7beb0'    # surface2
+  markedBaseCommitFgColor:
+    - '#a44d85'    # mauve
+  markedBaseCommitBgColor:
+    - '#c88c22'    # yellow
+  unstagedChangesColor:
+    - '#d93e32'    # red
+  defaultFgColor:
+    - '#363339'    # text

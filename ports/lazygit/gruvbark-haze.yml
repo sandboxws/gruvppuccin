@@ -1,0 +1,39 @@
+# ────────────────────────────────────────────────────────────
+#  GENERATED FILE — DO NOT EDIT
+#  source: palette.json + templates/lazygit/theme.tmpl
+#  regen:  python3 scripts/generate.py
+# ────────────────────────────────────────────────────────────
+# Gruvbark Haze theme for lazygit
+#
+# Preferred install — layer it over your config with a comma-separated path:
+#   export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml,/path/to/gruvbark-haze.yml"
+#
+# Or merge the `theme:` block below into your config.yml under `gui:`.
+
+theme:
+  activeBorderColor:
+    - '#a8a828'    # green
+    - bold
+  inactiveBorderColor:
+    - '#a69fa1'    # overlay0
+  searchingActiveBorderColor:
+    - '#e2aa30'    # yellow
+    - bold
+  optionsTextColor:
+    - '#4f979a'    # sapphire
+  selectedLineBgColor:
+    - '#e7e0d2'    # surface1
+  inactiveViewSelectedLineBgColor:
+    - bold
+  cherryPickedCommitFgColor:
+    - '#c47098'    # mauve
+  cherryPickedCommitBgColor:
+    - '#cdc6bf'    # surface2
+  markedBaseCommitFgColor:
+    - '#c47098'    # mauve
+  markedBaseCommitBgColor:
+    - '#e2aa30'    # yellow
+  unstagedChangesColor:
+    - '#d93e32'    # red
+  defaultFgColor:
+    - '#33303a'    # text

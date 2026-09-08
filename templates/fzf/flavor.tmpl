@@ -1,0 +1,12 @@
+# {@name} color scheme for fzf
+# Source this file in your .zshrc/.bashrc:
+#   source /path/to/{@stem}.zsh
+
+export FZF_DEFAULT_OPTS="${FZF_DEFAULT_OPTS:+$FZF_DEFAULT_OPTS }\
+--color=fg:#{text},bg:#{base},hl:#{yellow} \
+--color=fg+:#{text},bg+:#{surface1},hl+:#{peach} \
+--color=border:#{surface2},header:#{sapphire},gutter:#{base} \
+--color=spinner:#{peach},info:#{sapphire} \
+--color=pointer:#{mauve},marker:#{pink},prompt:#{green} \
+--color=separator:#{surface2},scrollbar:#{overlay0} \
+--color=label:#{text},preview-border:#{surface2}"

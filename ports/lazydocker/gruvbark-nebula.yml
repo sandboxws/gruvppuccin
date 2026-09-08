@@ -1,0 +1,25 @@
+# ────────────────────────────────────────────────────────────
+#  GENERATED FILE — DO NOT EDIT
+#  source: palette.json + templates/lazydocker/theme.tmpl
+#  regen:  python3 scripts/generate.py
+# ────────────────────────────────────────────────────────────
+# Gruvbark Nebula theme for lazydocker
+# Merge into your config.yml under the `gui:` key:
+#
+#   gui:
+#     theme:
+#       ... (contents below)
+#
+# lazydocker's ThemeConfig defines exactly these four keys; any others are
+# parsed and silently ignored.
+
+theme:
+  activeBorderColor:
+    - '#b8bb26'    # green
+    - bold
+  inactiveBorderColor:
+    - '#6a616c'    # overlay0
+  selectedLineBgColor:
+    - '#403a46'    # surface1
+  optionsTextColor:
+    - '#83a598'    # sapphire

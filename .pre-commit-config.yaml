@@ -6,15 +6,29 @@ repos:
         files: '\.(json)$'
       - id: check-yaml
         files: '\.(ya?ml)$'
+      # Generated output is emitted newline-terminated and whitespace-clean, so
+      # these must not touch ports/ — otherwise they rewrite files behind the
+      # generator and `generate.py --check` fails spuriously.
       - id: end-of-file-fixer
+        exclude: '^ports/'
       - id: trailing-whitespace
+        exclude: '^ports/'
 
   - repo: local
     hooks:
-      - id: palette-consistency
-        name: Check colors match palette.json
-        entry: scripts/check-palette-consistency.sh
-        language: script
-        files: '\.(json|ya?ml|theme|zsh)$'
-        exclude: '^(\.pre-commit-config\.yaml|palette\.json)$'
+      # Run the generator rather than --check: pre-commit's "files were modified
+      # by this hook" detection then fails the commit with the corrections
+      # already written, which is the black/prettier pattern. CI uses --check.
+      - id: gruvppuccin-generate
+        name: Regenerate ports from palette.json
+        entry: python3 scripts/generate.py
+        language: system
         pass_filenames: false
+        always_run: true
+
+      - id: gruvppuccin-palette
+        name: Validate palette.json invariants
+        entry: python3 scripts/generate.py --validate-palette
+        language: system
+        pass_filenames: false
+        files: '^palette\.json$'

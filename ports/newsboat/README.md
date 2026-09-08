@@ -2,6 +2,12 @@
 
 > Warm earthy tones for the newsboat RSS reader, with article syntax highlighting.
 
+newsboat has no hex support, so every color is quantized to its nearest xterm-256
+index. **12 of the 13 flavors produce distinct output** — Macchiato and Mocha
+quantize identically (both bases land on `color234`). Fewer still are *visually*
+distinguishable: Nocturne Gruv differs from Macchiato by a single grayscale step.
+All 13 ship anyway so the flavor set is uniform across ports.
+
 ## Install
 
 1. Save the color file:
@@ -15,6 +21,28 @@ cp colors ~/.newsboat/colors
 ```
 include ~/.newsboat/colors
 ```
+
+## Flavors
+
+`include` a flavor file from your newsboat config.
+
+<!-- flavors:start -->
+| Flavor | Mode | File |
+|--------|------|------|
+| Gruvppuccin Macchiato | dark | `gruvppuccin-macchiato.colors` |
+| Gruvppuccin Mocha | dark | `gruvppuccin-mocha.colors` |
+| Gruvppuccin Latte | light | `gruvppuccin-latte.colors` |
+| Gruvppuccin Nebula | dark | `gruvppuccin-nebula.colors` |
+| Gruvppuccin Void | dark | `gruvppuccin-void.colors` |
+| Gruvppuccin Nova | light | `gruvppuccin-nova.colors` |
+| Gruvppuccin Haze | light | `gruvppuccin-haze.colors` |
+| Gruvbark Nebula | dark | `gruvbark-nebula.colors` |
+| Gruvbark Void | dark | `gruvbark-void.colors` |
+| Gruvbark Nova | light | `gruvbark-nova.colors` |
+| Gruvbark Haze | light | `gruvbark-haze.colors` |
+| Nocturne | dark | `gruvppuccin-nocturne.colors` |
+| Nocturne Gruv | dark | `gruvppuccin-nocturne-gruv.colors` |
+<!-- flavors:end -->
 
 ## Notes
 

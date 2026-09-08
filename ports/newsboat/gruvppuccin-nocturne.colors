@@ -1,0 +1,38 @@
+# ────────────────────────────────────────────────────────────
+#  GENERATED FILE — DO NOT EDIT
+#  source: palette.json + templates/newsboat/colors.tmpl
+#  regen:  python3 scripts/generate.py
+# ────────────────────────────────────────────────────────────
+# Nocturne — Gruvbox × Catppuccin blend
+#
+# newsboat has no hex support, so every color is quantized to its nearest
+# xterm-256 index (cube + gray ramp, indices 16-255; 0-15 are excluded because
+# terminals remap them).
+#
+#   text     #e6e8ec → color254   base     #12151a → color233
+#   surface1 #232830 → color235   overlay0 #3a414d → color238
+#   green    #5eead4 → color80    yellow   #f5b454 → color215
+#   sapphire #7c6cf6 → color99    red      #fb7185 → color204
+#   peach    #38bdf8 → color75    mauve    #a78bfa → color141
+#   pink     #f472b6 → color205   teal     #34d399 → color78
+
+color background          color254  color233
+color listnormal          color254  color233
+color listnormal_unread   color80  color233  bold
+color listfocus           color254  color235  bold
+color listfocus_unread    color80  color235  bold
+color info                color233  color99
+color article             color254  color233
+color title               color254  color99  bold
+color hint-key            color233  color99  bold
+color hint-keys-delimiter color233  color99
+color hint-separator      color233  color99
+color hint-description    color233  color99
+color end-of-text-marker  color238  color233
+
+highlight article "^(Feed|Link):.*$"         color215 color233 bold
+highlight article "^(Title|Date|Author):.*$" color215 color233 bold
+highlight article "https?://[^ ]+"           color99 color233 underline
+highlight article "\\[[0-9]+\\]"             color80 color233 bold
+highlight article "\\[image [0-9]+.*\\]"     color75 color233 bold
+highlight feedlist "[║│]"                     color141 color233 bold

@@ -1,0 +1,39 @@
+# ────────────────────────────────────────────────────────────
+#  GENERATED FILE — DO NOT EDIT
+#  source: palette.json + templates/lazygit/theme.tmpl
+#  regen:  python3 scripts/generate.py
+# ────────────────────────────────────────────────────────────
+# Gruvbark Nebula theme for lazygit
+#
+# Preferred install — layer it over your config with a comma-separated path:
+#   export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml,/path/to/gruvbark-nebula.yml"
+#
+# Or merge the `theme:` block below into your config.yml under `gui:`.
+
+theme:
+  activeBorderColor:
+    - '#b8bb26'    # green
+    - bold
+  inactiveBorderColor:
+    - '#6a616c'    # overlay0
+  searchingActiveBorderColor:
+    - '#fabd2f'    # yellow
+    - bold
+  optionsTextColor:
+    - '#83a598'    # sapphire
+  selectedLineBgColor:
+    - '#403a46'    # surface1
+  inactiveViewSelectedLineBgColor:
+    - bold
+  cherryPickedCommitFgColor:
+    - '#d3869b'    # mauve
+  cherryPickedCommitBgColor:
+    - '#524a57'    # surface2
+  markedBaseCommitFgColor:
+    - '#d3869b'    # mauve
+  markedBaseCommitBgColor:
+    - '#fabd2f'    # yellow
+  unstagedChangesColor:
+    - '#fb4934'    # red
+  defaultFgColor:
+    - '#dbdfcd'    # text

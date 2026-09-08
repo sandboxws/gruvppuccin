@@ -1,0 +1,28 @@
+# {@name} — Gruvbox × Catppuccin blend
+#
+# newsboat has no hex support, so every color is quantized to its nearest
+# xterm-256 index (cube + gray ramp, indices 16-255; 0-15 are excluded because
+# terminals remap them).
+#
+{@mapping}
+
+color background          color{text.x256}  color{base.x256}
+color listnormal          color{text.x256}  color{base.x256}
+color listnormal_unread   color{green.x256}  color{base.x256}  bold
+color listfocus           color{text.x256}  color{surface1.x256}  bold
+color listfocus_unread    color{green.x256}  color{surface1.x256}  bold
+color info                color{base.x256}  color{sapphire.x256}
+color article             color{text.x256}  color{base.x256}
+color title               color{text.x256}  color{sapphire.x256}  bold
+color hint-key            color{base.x256}  color{sapphire.x256}  bold
+color hint-keys-delimiter color{base.x256}  color{sapphire.x256}
+color hint-separator      color{base.x256}  color{sapphire.x256}
+color hint-description    color{base.x256}  color{sapphire.x256}
+color end-of-text-marker  color{overlay0.x256}  color{base.x256}
+
+highlight article "^(Feed|Link):.*$"         color{yellow.x256} color{base.x256} bold
+highlight article "^(Title|Date|Author):.*$" color{yellow.x256} color{base.x256} bold
+highlight article "https?://[^ ]+"           color{sapphire.x256} color{base.x256} underline
+highlight article "\\[[0-9]+\\]"             color{green.x256} color{base.x256} bold
+highlight article "\\[image [0-9]+.*\\]"     color{peach.x256} color{base.x256} bold
+highlight feedlist "[║│]"                     color{mauve.x256} color{base.x256} bold

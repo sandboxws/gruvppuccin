@@ -1,30 +1,40 @@
-# Gruvppuccin — Gruvbox x Catppuccin blend
+# ────────────────────────────────────────────────────────────
+#  GENERATED FILE — DO NOT EDIT
+#  source: palette.json + templates/newsboat/colors.tmpl
+#  regen:  python3 scripts/generate.py
+# ────────────────────────────────────────────────────────────
+# Alias for gruvppuccin-macchiato (the pre-1.0 default), kept so existing
+# configs keep working. Prefer gruvppuccin-macchiato in new setups.
+# Gruvppuccin Macchiato — Gruvbox × Catppuccin blend
 #
-# 256-color approximations of the Gruvpuccin palette:
-#   text     #d4be98 → color223    base     #181a1b → color234
-#   surface1 #2e2c2b → color236    overlay0 #5a524c → color240
-#   green    #a9b665 → color142    yellow   #d8a657 → color179
-#   sapphire #7daea3 → color109    red      #ea6962 → color167
-#   peach    #e78a4e → color172    mauve    #c28fd6 → color176
-#   pink     #d4879c → color175    teal     #89b482 → color108
+# newsboat has no hex support, so every color is quantized to its nearest
+# xterm-256 index (cube + gray ramp, indices 16-255; 0-15 are excluded because
+# terminals remap them).
+#
+#   text     #d4be98 → color180   base     #181a1b → color234
+#   surface1 #2e2c2b → color236   overlay0 #5a524c → color239
+#   green    #a9b665 → color143   yellow   #d8a657 → color179
+#   sapphire #7daea3 → color109   red      #ea6962 → color167
+#   peach    #e78a4e → color173   mauve    #c28fd6 → color140
+#   pink     #d68299 → color174   teal     #8fb18a → color108
 
-color background          color223  color234
-color listnormal          color223  color234
-color listnormal_unread   color142  color234  bold
-color listfocus           color223  color236  bold
-color listfocus_unread    color142  color236  bold
+color background          color180  color234
+color listnormal          color180  color234
+color listnormal_unread   color143  color234  bold
+color listfocus           color180  color236  bold
+color listfocus_unread    color143  color236  bold
 color info                color234  color109
-color article             color223  color234
-color title               color223  color109  bold
+color article             color180  color234
+color title               color180  color109  bold
 color hint-key            color234  color109  bold
 color hint-keys-delimiter color234  color109
 color hint-separator      color234  color109
 color hint-description    color234  color109
-color end-of-text-marker  color240  color234
+color end-of-text-marker  color239  color234
 
 highlight article "^(Feed|Link):.*$"         color179 color234 bold
 highlight article "^(Title|Date|Author):.*$" color179 color234 bold
 highlight article "https?://[^ ]+"           color109 color234 underline
-highlight article "\\[[0-9]+\\]"             color142 color234 bold
-highlight article "\\[image [0-9]+.*\\]"     color172 color234 bold
-highlight feedlist "[║│]"                     color176 color234 bold
+highlight article "\\[[0-9]+\\]"             color143 color234 bold
+highlight article "\\[image [0-9]+.*\\]"     color173 color234 bold
+highlight feedlist "[║│]"                     color140 color234 bold

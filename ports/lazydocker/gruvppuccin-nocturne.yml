@@ -1,0 +1,25 @@
+# ────────────────────────────────────────────────────────────
+#  GENERATED FILE — DO NOT EDIT
+#  source: palette.json + templates/lazydocker/theme.tmpl
+#  regen:  python3 scripts/generate.py
+# ────────────────────────────────────────────────────────────
+# Nocturne theme for lazydocker
+# Merge into your config.yml under the `gui:` key:
+#
+#   gui:
+#     theme:
+#       ... (contents below)
+#
+# lazydocker's ThemeConfig defines exactly these four keys; any others are
+# parsed and silently ignored.
+
+theme:
+  activeBorderColor:
+    - '#5eead4'    # green
+    - bold
+  inactiveBorderColor:
+    - '#3a414d'    # overlay0
+  selectedLineBgColor:
+    - '#232830'    # surface1
+  optionsTextColor:
+    - '#7c6cf6'    # sapphire

@@ -1,0 +1,13 @@
+-- Gruvppuccin (light flavors) for usql
+--
+-- usql cannot load a custom palette: it resolves SYNTAX_HL_STYLE against
+-- Chroma's compiled-in style registry, which has no runtime disk loader. This
+-- snippet therefore selects the closest built-in style rather than reproducing
+-- the Gruvppuccin palette. See the port README for the full flavor mapping.
+--
+-- Load it from a usql session:
+--   \i /path/to/gruvppuccin-light.usql
+
+\set SYNTAX_HL true
+\set SYNTAX_HL_STYLE gruvbox-light
+\set SYNTAX_HL_OVERRIDE_BG true

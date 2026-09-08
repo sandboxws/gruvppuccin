@@ -1,0 +1,89 @@
+# ────────────────────────────────────────────────────────────
+#  GENERATED FILE — DO NOT EDIT
+#  source: palette.json + templates/btop/theme.tmpl
+#  regen:  python3 scripts/generate.py
+# ────────────────────────────────────────────────────────────
+# Gruvbark Nova — Gruvbox × Catppuccin blend for btop
+# Warm earthy tones with Catppuccin's cooler accents
+
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="#f7f1d9"
+
+# Main text color
+theme[main_fg]="#363339"
+
+# Title color for boxes
+theme[title]="#363339"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#e06f1e"
+
+# Background color of selected items
+theme[selected_bg]="#e2aa30"
+
+# Foreground color of selected items
+theme[selected_fg]="#f7f1d9"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#a79d98"
+
+# Color of text appearing on top of graphs, i.e uptime and current network graph scaling
+theme[graph_text]="#a79d98"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#a8a828"
+
+# Cpu box outline color
+theme[cpu_box]="#c7beb0"
+
+# Memory/disks box outline color
+theme[mem_box]="#c7beb0"
+
+# Net up/down box outline color
+theme[net_box]="#c7beb0"
+
+# Processes box outline color
+theme[proc_box]="#c7beb0"
+
+# Box divider line and small boxes line color
+theme[div_line]="#c7beb0"
+
+# Temperature graph colors (sapphire → peach → red: cool to hot)
+theme[temp_start]="#4f979a"
+theme[temp_mid]="#e06f1e"
+theme[temp_end]="#d93e32"
+
+# CPU graph colors (green → yellow → red: load gradient)
+theme[cpu_start]="#a8a828"
+theme[cpu_mid]="#e2aa30"
+theme[cpu_end]="#d93e32"
+
+# Mem/Disk free meter (teal → green → yellow)
+theme[free_start]="#739e6c"
+theme[free_mid]="#a8a828"
+theme[free_end]="#e2aa30"
+
+# Mem/Disk cached meter (sapphire → sky → teal)
+theme[cached_start]="#4f979a"
+theme[cached_mid]="#48797d"
+theme[cached_end]="#739e6c"
+
+# Mem/Disk available meter (yellow → peach → red)
+theme[available_start]="#e2aa30"
+theme[available_mid]="#e06f1e"
+theme[available_end]="#d93e32"
+
+# Mem/Disk used meter (red → maroon → peach)
+theme[used_start]="#d93e32"
+theme[used_mid]="#db4f2b"
+theme[used_end]="#e06f1e"
+
+# Download graph colors (sky → sapphire → lavender)
+theme[download_start]="#48797d"
+theme[download_mid]="#4f979a"
+theme[download_end]="#a17c99"
+
+# Upload graph colors (mauve → pink → flamingo)
+theme[upload_start]="#c47098"
+theme[upload_mid]="#d06062"
+theme[upload_end]="#de5f25"

@@ -1,0 +1,25 @@
+# ────────────────────────────────────────────────────────────
+#  GENERATED FILE — DO NOT EDIT
+#  source: palette.json + templates/lazydocker/theme.tmpl
+#  regen:  python3 scripts/generate.py
+# ────────────────────────────────────────────────────────────
+# Gruvppuccin Latte theme for lazydocker
+# Merge into your config.yml under the `gui:` key:
+#
+#   gui:
+#     theme:
+#       ... (contents below)
+#
+# lazydocker's ThemeConfig defines exactly these four keys; any others are
+# parsed and silently ignored.
+
+theme:
+  activeBorderColor:
+    - '#8a8f1a'    # green
+    - bold
+  inactiveBorderColor:
+    - '#a89984'    # overlay0
+  selectedLineBgColor:
+    - '#d5c4a1'    # surface1
+  optionsTextColor:
+    - '#1a7f8c'    # sapphire

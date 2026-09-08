@@ -1,9 +1,19 @@
-# Gruvppuccin theme for lazydocker
+# ────────────────────────────────────────────────────────────
+#  GENERATED FILE — DO NOT EDIT
+#  source: palette.json + templates/lazydocker/theme.tmpl
+#  regen:  python3 scripts/generate.py
+# ────────────────────────────────────────────────────────────
+# Alias for gruvppuccin-macchiato (the pre-1.0 default), kept so existing
+# configs keep working. Prefer gruvppuccin-macchiato in new setups.
+# Gruvppuccin Macchiato theme for lazydocker
 # Merge into your config.yml under the `gui:` key:
 #
 #   gui:
 #     theme:
 #       ... (contents below)
+#
+# lazydocker's ThemeConfig defines exactly these four keys; any others are
+# parsed and silently ignored.
 
 theme:
   activeBorderColor:
@@ -15,8 +25,3 @@ theme:
     - '#2e2c2b'    # surface1
   optionsTextColor:
     - '#7daea3'    # sapphire
-  searchingActiveBorderColor:
-    - '#d8a657'    # yellow
-    - bold
-  defaultFgColor:
-    - '#d4be98'    # text

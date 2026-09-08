@@ -1,0 +1,8 @@
+# Everything under ports/ is rendered by scripts/generate.py from palette.json.
+# Marking it generated collapses these files in GitHub diffs and keeps them out
+# of language statistics. Edit templates/ and palette.json instead.
+ports/** linguist-generated=true
+
+# The port READMEs and usql's config.yaml are hand-maintained.
+ports/*/README.md -linguist-generated
+ports/usql/config.yaml -linguist-generated

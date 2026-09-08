@@ -2,6 +2,24 @@
 
 > Full editor theme with syntax highlighting, terminal, and git colors. Dark and light variants in one theme family.
 
+> [!IMPORTANT]
+> **Renamed in 1.0.0.** The themes formerly called *Gruvppuccin Dark* and
+> *Gruvppuccin Light* are now **Gruvppuccin Macchiato** and **Gruvppuccin Latte**.
+> Zed has no theme aliasing, so a settings file still pinning the old names will
+> silently fall back to Zed's default — update `settings.json` after upgrading.
+
+## Themes
+
+13 themes across 4 family files. Zed keys its registry by individual theme name,
+so all 13 names are globally unique and the family is display metadata only.
+
+| File | Family | Themes |
+|------|--------|--------|
+| `themes/gruvppuccin.json` | Gruvppuccin | Gruvppuccin Macchiato, Gruvppuccin Mocha, Gruvppuccin Latte |
+| `themes/gruvppuccin-embark.json` | Gruvppuccin Embark | Gruvppuccin Nebula, Gruvppuccin Void, Gruvppuccin Nova, Gruvppuccin Haze |
+| `themes/gruvbark.json` | Gruvbark | Gruvbark Nebula, Gruvbark Void, Gruvbark Nova, Gruvbark Haze |
+| `themes/nocturne.json` | Nocturne | Nocturne, Nocturne Gruv |
+
 ## Install
 
 ### Drop-in theme
@@ -18,7 +36,7 @@ cp themes/gruvppuccin.json ~/.config/zed/themes/
 ```
 
 2. Restart Zed and pick the theme:
-   - `cmd-k cmd-t` (macOS) / `ctrl-k ctrl-t` (Linux), then choose **Gruvppuccin Dark** or **Gruvppuccin Light**
+   - `cmd-k cmd-t` (macOS) / `ctrl-k ctrl-t` (Linux), then choose any of the 13 themes
    - Or set it in `settings.json` — see Usage below
 
 ### Dev extension
@@ -32,12 +50,12 @@ Follow the system appearance, mirroring the Neovim port's `:set bg=dark` / `:set
 ```json
 "theme": {
   "mode": "system",
-  "light": "Gruvppuccin Light",
-  "dark": "Gruvppuccin Dark"
+  "light": "Gruvppuccin Latte",
+  "dark": "Gruvppuccin Macchiato"
 }
 ```
 
-Or pin one variant with `"theme": "Gruvppuccin Dark"`.
+Or pin one theme with `"theme": "Gruvppuccin Mocha"`.
 
 ## UI mapping
 

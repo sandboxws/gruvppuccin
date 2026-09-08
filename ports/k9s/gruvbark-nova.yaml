@@ -1,0 +1,132 @@
+# ────────────────────────────────────────────────────────────
+#  GENERATED FILE — DO NOT EDIT
+#  source: palette.json + templates/k9s/skin.tmpl
+#  regen:  python3 scripts/generate.py
+# ────────────────────────────────────────────────────────────
+# Gruvbark Nova — Gruvbox × Catppuccin blend for k9s
+#
+# Install as a named skin and reference it by stem (no extension):
+#   k9s:
+#     ui:
+#       skin: gruvbark-nova
+#
+# k9s also supports per-cluster skins, so different contexts can wear
+# different flavors — see the port README.
+
+# ── Palette anchors ────────────────────────────
+foreground: &text      "#363339"
+background: &base      "#f7f1d9"
+mantle:     &mantle    "#f2ead2"
+crust:      &crust     "#e8dec8"
+surface0:   &surface0  "#ebe1ca"
+surface1:   &surface1  "#e8dec8"
+surface2:   &surface2  "#c7beb0"
+overlay0:   &overlay0  "#a79d98"
+overlay1:   &overlay1  "#8f8584"
+overlay2:   &overlay2  "#766d72"
+subtext0:   &subtext0  "#605860"
+subtext1:   &subtext1  "#49424d"
+rosewater:  &rosewater "#e18725"
+flamingo:   &flamingo  "#de5f25"
+pink:       &pink      "#d06062"
+mauve:      &mauve     "#c47098"
+red:        &red       "#d93e32"
+maroon:     &maroon    "#db4f2b"
+peach:      &peach     "#e06f1e"
+yellow:     &yellow    "#e2aa30"
+green:      &green     "#a8a828"
+teal:       &teal      "#739e6c"
+sky:        &sky       "#48797d"
+sapphire:   &sapphire  "#4f979a"
+blue:       &blue      "#4f979a"
+lavender:   &lavender  "#a17c99"
+
+k9s:
+  body:
+    fgColor: *text
+    bgColor: *base
+    logoColor: *sapphire
+  prompt:
+    fgColor: *text
+    bgColor: *base
+    suggestColor: *peach
+  info:
+    fgColor: *mauve
+    sectionColor: *text
+  help:
+    fgColor: *text
+    bgColor: *base
+    keyColor: *mauve
+    numKeyColor: *sapphire
+    sectionColor: *green
+  dialog:
+    fgColor: *text
+    bgColor: *base
+    buttonFgColor: *base
+    buttonBgColor: *mauve
+    buttonFocusFgColor: *base
+    buttonFocusBgColor: *green
+    labelFgColor: *peach
+    fieldFgColor: *text
+  frame:
+    border:
+      fgColor: *overlay0
+      focusColor: *green
+    menu:
+      fgColor: *text
+      keyColor: *mauve
+      numKeyColor: *mauve
+    crumbs:
+      fgColor: *base
+      bgColor: *overlay0
+      activeColor: *sapphire
+    status:
+      newColor: *sky
+      modifyColor: *sapphire
+      addColor: *green
+      errorColor: *red
+      highlightColor: *peach
+      killColor: *overlay1
+      completedColor: *overlay1
+    title:
+      fgColor: *text
+      bgColor: *base
+      highlightColor: *peach
+      counterColor: *sapphire
+      filterColor: *mauve
+  views:
+    charts:
+      bgColor: *base
+      defaultDialColors:
+        - *sapphire
+        - *red
+      defaultChartColors:
+        - *sapphire
+        - *red
+    table:
+      fgColor: *text
+      bgColor: *base
+      cursorFgColor: *text
+      cursorBgColor: *surface1
+      header:
+        fgColor: *text
+        bgColor: *base
+        sorterColor: *yellow
+    xray:
+      fgColor: *text
+      bgColor: *base
+      cursorColor: *surface1
+      graphicColor: *sapphire
+      showIcons: false
+    yaml:
+      keyColor: *mauve
+      colonColor: *overlay2
+      valueColor: *text
+    logs:
+      fgColor: *text
+      bgColor: *base
+      indicator:
+        fgColor: *text
+        bgColor: *base
+        toggleOnColor: *green
+        toggleOffColor: *red

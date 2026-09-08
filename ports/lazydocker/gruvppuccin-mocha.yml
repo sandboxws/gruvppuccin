@@ -1,0 +1,25 @@
+# ────────────────────────────────────────────────────────────
+#  GENERATED FILE — DO NOT EDIT
+#  source: palette.json + templates/lazydocker/theme.tmpl
+#  regen:  python3 scripts/generate.py
+# ────────────────────────────────────────────────────────────
+# Gruvppuccin Mocha theme for lazydocker
+# Merge into your config.yml under the `gui:` key:
+#
+#   gui:
+#     theme:
+#       ... (contents below)
+#
+# lazydocker's ThemeConfig defines exactly these four keys; any others are
+# parsed and silently ignored.
+
+theme:
+  activeBorderColor:
+    - '#a9b665'    # green
+    - bold
+  inactiveBorderColor:
+    - '#5a524c'    # overlay0
+  selectedLineBgColor:
+    - '#32302f'    # surface1
+  optionsTextColor:
+    - '#7daea3'    # sapphire
